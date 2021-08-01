@@ -1,0 +1,17 @@
+library(shiny)
+library(shinydashboard)
+library(ggplot2)
+library(dashboardthemes)
+library(hrbrthemes)
+library(dplyr)
+library(lessR)
+library(wordcloud)
+library(packcircles)
+library(viridis)
+library(ggiraph)
+
+source("ui.R")
+source("server.R")
+data <- read.csv2("./data/subsaharan.csv")
+
+shinyApp(ui,server)
